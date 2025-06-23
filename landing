@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Social Links</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Apply the Inter font family */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Simple animation for the card appearing */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+        /* Style for the hit counter */
+        #hit-counter-container {
+            transition: opacity 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 bg-gradient-to-br from-gray-900 to-slate-800">
+
+    <!-- Main container to center the content -->
+    <div class="min-h-screen flex items-center justify-center p-4">
+
+        <!-- The main card that holds all the content -->
+        <div class="w-full max-w-md mx-auto bg-gray-800/60 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-gray-700 animate-fade-in">
+            
+            <!-- Profile Section -->
+            <div class="flex flex-col items-center text-center">
+                <!-- Profile Picture -->
+                <img 
+                    class="w-24 h-24 rounded-full border-4 border-gray-600 object-cover shadow-lg" 
+                    src="https://placehold.co/100x100/334155/e2e8f0?text=You" 
+                    alt="Profile Picture"
+                    onerror="this.onerror=null; this.src='https://placehold.co/100x100/334155/e2e8f0?text=Error';"
+                >
+                
+                <!-- Name and Handle -->
+                <h1 class="text-2xl font-bold text-white mt-4">Your Name</h1>
+                <p class="text-md text-gray-400 mt-1">@yourusername</p>
+                <p class="text-sm text-gray-300 mt-4 max-w-xs">
+                    Welcome to my digital space! Find all my projects, content, and ways to connect right here.
+                </p>
+            </div>
+
+            <!-- Social Links Section -->
+            <div class="mt-8 space-y-4">
+                
+                <!-- Twitter/X Link -->
+                <a href="#" target="_blank" class="group flex items-center justify-center w-full bg-gray-700 hover:bg-gray-600 text-white font-semibold p-4 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-md">
+                    <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    Follow on X
+                </a>
+
+                <!-- Instagram Link -->
+                <a href="#" target="_blank" class="group flex items-center justify-center w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white font-semibold p-4 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-md">
+                    <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 012.792 2.792c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808a6.78 6.78 0 01-.465 2.427 4.902 4.902 0 01-2.792 2.792 6.78 6.78 0 01-2.427.465c-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06a6.78 6.78 0 01-2.427-.465 4.902 4.902 0 01-2.792-2.792A6.78 6.78 0 012.06 15.818c-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808a6.78 6.78 0 01.465-2.427 4.902 4.902 0 012.792-2.792A6.78 6.78 0 018.507 2.06C9.531 2.013 9.885 2 12.315 2zm0 1.623c-2.383 0-2.706.01-3.66.058a5.153 5.153 0 00-1.84.35 3.287 3.287 0 00-1.843 1.843 5.153 5.153 0 00-.35 1.84c-.048.954-.058 1.277-.058 3.66s.01 2.706.058 3.66a5.153 5.153 0 00.35 1.84 3.287 3.287 0 001.843 1.843 5.153 5.153 0 001.84.35c.954.048 1.277.058 3.66.058s2.706-.01 3.66-.058a5.153 5.153 0 001.84-.35 3.287 3.287 0 001.843-1.843 5.153 5.153 0 00.35-1.84c.048-.954.058-1.277.058-3.66s-.01-2.706-.058-3.66a5.153 5.153 0 00-.35-1.84 3.287 3.287 0 00-1.843-1.843 5.153 5.153 0 00-1.84-.35c-.954-.048-1.277-.058-3.66-.058zM12 8.25a3.75 3.75 0 100 7.5 3.75 3.75 0 000-7.5zm0 1.623a2.127 2.127 0 110 4.254 2.127 2.127 0 010-4.254zM18.806 6.88a1.314 1.314 0 10-2.628 0 1.314 1.314 0 002.628 0z" clip-rule="evenodd" /></svg>
+                    Follow on Instagram
+                </a>
+
+                <!-- YouTube Link -->
+                <a href="#" target="_blank" class="group flex items-center justify-center w-full bg-red-600 hover:bg-red-700 text-white font-semibold p-4 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-md">
+                    <!-- CORRECTED YouTube SVG Icon -->
+                    <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.582,6.186c-0.23-0.814-0.908-1.491-1.722-1.722C18.256,4,12,4,12,4S5.744,4,4.14,4.464 c-0.814,0.23-1.491,0.908-1.722,1.722C2,7.79,2,12,2,12s0,4.21,0.418,5.814c0.23,0.814,0.908,1.491,1.722,1.722 C5.744,20,12,20,12,20s6.256,0,7.86-0.464c0.814-0.23,1.491-0.908,1.722-1.722C22,16.21,22,12,22,12S22,7.79,21.582,6.186z M10,15.464V8.536L16,12L10,15.464z"/></svg>
+                    Subscribe on YouTube
+                </a>
+
+                <!-- GitHub Link -->
+                <a href="#" target="_blank" class="group flex items-center justify-center w-full bg-gray-900 hover:bg-black text-white font-semibold p-4 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-md border border-gray-600">
+                    <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.165 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd" /></svg>
+                    Check out my GitHub
+                </a>
+
+            </div>
+
+            <!-- Footer -->
+            <div class="text-center mt-8">
+                <!-- Hit Counter Display -->
+                <div id="hit-counter-container" class="text-gray-400 text-sm mb-2 opacity-0">
+                    Views: <span id="hit-counter" class="font-semibold text-white">...</span>
+                </div>
+                <p class="text-xs text-gray-500">Made with 🤍</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase SDKs -->
+    <script type="module">
+        // Import necessary functions from Firebase SDKs
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInAnonymously, onAuthStateChanged, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { getFirestore, doc, onSnapshot, setDoc, increment, serverTimestamp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+        // --- Firebase Configuration ---
+        // These variables are provided by the environment. Do not change them.
+        const appId = typeof __app_id !== 'undefined' ? __app_id : 'social-hub-page';
+        const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : { apiKey: "DEMO", authDomain: "DEMO", projectId: "DEMO" };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+
+        // --- Hit Counter Logic ---
+        const counterDocRef = doc(db, `/artifacts/${appId}/public/data/siteMetrics/pageCounter`);
+        const counterElement = document.getElementById('hit-counter');
+        const counterContainer = document.getElementById('hit-counter-container');
+        
+        // This flag prevents incrementing the counter multiple times for a single visit
+        let hasIncremented = false;
+
+        // Function to increment the counter
+        const incrementCounter = async () => {
+            if (hasIncremented) return;
+            hasIncremented = true;
+            try {
+                // Atomically increments the 'hits' field.
+                // Creates the document if it doesn't exist.
+                await setDoc(counterDocRef, { 
+                    hits: increment(1),
+                    lastUpdated: serverTimestamp() 
+                }, { merge: true });
+            } catch (error) {
+                console.error("Error incrementing counter:", error);
+            }
+        };
+
+        // --- Authentication and Initialization ---
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                // User is signed in.
+                console.log("User authenticated:", user.uid);
+                
+                // 1. Listen for real-time updates on the counter
+                onSnapshot(counterDocRef, (doc) => {
+                    if (doc.exists()) {
+                        const data = doc.data();
+                        counterElement.textContent = data.hits.toLocaleString();
+                    } else {
+                        counterElement.textContent = '1'; // Display 1 on first ever visit
+                    }
+                    // Make the counter visible after the first data load
+                    counterContainer.style.opacity = '1';
+                }, (error) => {
+                    console.error("Error getting counter document:", error);
+                    counterElement.textContent = 'N/A';
+                    counterContainer.style.opacity = '1';
+                });
+
+                // 2. Increment the counter for this visit
+                incrementCounter();
+
+            } else {
+                // User is signed out.
+                console.log("User not authenticated. Attempting to sign in.");
+            }
+        });
+
+        // Sign in logic
+        (async () => {
+            try {
+                if (typeof __initial_auth_token !== 'undefined' && __initial_auth_token) {
+                    console.log("Signing in with custom token.");
+                    await signInWithCustomToken(auth, __initial_auth_token);
+                } else {
+                    console.log("Signing in anonymously.");
+                    await signInAnonymously(auth);
+                }
+            } catch (error) {
+                console.error("Authentication failed:", error);
+                // Still try to show the counter, but don't increment
+                 onSnapshot(counterDocRef, (doc) => {
+                    if (doc.exists()) counterElement.textContent = doc.data().hits.toLocaleString();
+                    else counterElement.textContent = '0';
+                    counterContainer.style.opacity = '1';
+                });
+            }
+        })();
+
+    </script>
+</body>
+</html>
