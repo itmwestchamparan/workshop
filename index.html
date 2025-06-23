@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Social Links</title>
     
-    <!-- Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
@@ -26,22 +24,32 @@
         .animate-fade-in {
             animation: fadeIn 0.5s ease-out forwards;
         }
+        /* Custom styles for beautiful cards */
+        .social-link-fb {
+            background-color: #4f46e5; /* Indigo */
+            /* Subtle texture inspired by Bihari textiles */
+            background-image: url('data:image/svg+xml;utf8,<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g fill="%236366f1" fill-opacity="0.1"><rect x="0" y="0" width="100" height="1"></rect><rect x="0" y="50" width="100" height="1"></rect></g></svg>');
+        }
+        .social-link-fb:hover {
+            background-color: #4338ca; /* Deeper Indigo */
+        }
+        .social-link-yt {
+            background-color: #9f1239; /* Maroon */
+            /* Subtle pattern inspired by Madhubani art */
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><g fill="%23be123c" fill-opacity="0.1"><path d="M 10 10 C 20 20 40 20 50 10 C 60 0 80 0 90 10 C 95 15 95 25 90 30 C 80 40 60 40 50 30 C 40 20 20 20 10 30 C 5 35 5 45 10 50 S 30 60 40 50 C 50 40 70 40 80 50 S 95 65 90 70 C 80 80 60 80 50 70 C 40 60 20 60 10 70 S -5 85 10 90 C 20 100 40 100 50 90 S 70 80 80 90 S 95 95 90 100" stroke-width="2" stroke="%23be123c" fill="none"/></g></svg>');
+        }
+        .social-link-yt:hover {
+            background-color: #881337; /* Deeper Maroon */
+        }
     </style>
 </head>
 <body class="bg-gray-900 bg-gradient-to-br from-gray-900 to-slate-800">
 
-    <!-- Main container to center the content -->
     <div class="min-h-screen flex items-center justify-center p-4">
 
-        <!-- The main card that holds all the content -->
         <div class="w-full max-w-md mx-auto bg-gray-800/60 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-gray-700 animate-fade-in">
             
-            <!-- Profile Section -->
             <div class="flex flex-col items-center text-center">
-                <!-- Profile Picture -->
-               
-                
-                <!-- Name and Handle -->
                 <h1 class="text-2xl font-bold text-white mt-4">Social Media Handles</h1>
                 <p class="text-md text-gray-400 mt-1">BLOs Workshop</p>
                 <p class="text-sm text-gray-300 mt-4 max-w-xs">
@@ -49,50 +57,40 @@
                 </p>
             </div>
 
-            <!-- Social Links Section -->
             <div class="mt-8 space-y-4">
                 
                 
-                <!-- Facebook Link 1 -->
-                <a href="https://www.facebook.com/ECI/" id="link-facebook-1" target="_blank" class="social-link group flex items-center justify-between w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold p-4 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-md">
+                <a href="https://www.facebook.com/ECI/" id="link-facebook-1" target="_blank" class="social-link-fb group flex items-center justify-between w-full text-white font-semibold p-4 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-md">
                     <div class="flex items-center"><svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>Follow ECI on Facebook</div>
                     <span class="bg-white/20 text-xs rounded-full px-2 py-1" id="count-link-facebook-1">...</span>
                 </a>
 
-                <!-- Facebook Link 2 -->
-                <a href="https://www.facebook.com/BiharCEO/" id="link-facebook-2" target="_blank" class="social-link group flex items-center justify-between w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold p-4 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-md">
+                <a href="https://www.facebook.com/BiharCEO/" id="link-facebook-2" target="_blank" class="social-link-fb group flex items-center justify-between w-full text-white font-semibold p-4 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-md">
                     <div class="flex items-center"><svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>Follow CEO Bihar on Facebook</div>
                     <span class="bg-white/20 text-xs rounded-full px-2 py-1" id="count-link-facebook-2">...</span>
                 </a>
 
-                <!-- Facebook Link 3 -->
-                <a href="https://www.facebook.com/dm.westchamparan/" id="link-facebook-3" target="_blank" class="social-link group flex items-center justify-between w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold p-4 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-md">
+                <a href="https://www.facebook.com/dm.westchamparan/" id="link-facebook-3" target="_blank" class="social-link-fb group flex items-center justify-between w-full text-white font-semibold p-4 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-md">
                     <div class="flex items-center"><svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>Follow DEO West Champaran on Facebook</div>
                     <span class="bg-white/20 text-xs rounded-full px-2 py-1" id="count-link-facebook-3">...</span>
                 </a>
 
-                <!-- YouTube Link 1 -->
-                <a href="https://www.youtube.com/channel/UCGdsgdPfwnwYF1l8YTFkknA" id="link-youtube-1" target="_blank" class="social-link group flex items-center justify-between w-full bg-red-600 hover:bg-red-700 text-white font-semibold p-4 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-md">
+                <a href="https://www.youtube.com/channel/UCQ1_32jARa2w2Kqjkvw3_Hw" id="link-youtube-1" target="_blank" class="social-link-yt group flex items-center justify-between w-full text-white font-semibold p-4 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-md">
                     <div class="flex items-center"><svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M21.582,6.186c-0.23-0.814-0.908-1.491-1.722-1.722C18.256,4,12,4,12,4S5.744,4,4.14,4.464 c-0.814,0.23-1.491,0.908-1.722,1.722C2,7.79,2,12,2,12s0,4.21,0.418,5.814c0.23,0.814,0.908,1.491,1.722,1.722 C5.744,20,12,20,12,20s6.256,0,7.86-0.464c0.814-0.23,1.491-0.908,1.722-1.722C22,16.21,22,12,22,12S22,7.79,21.582,6.186z M10,15.464V8.536L16,12L10,15.464z"/></svg>Subscribe ECI on YouTube</div>
                     <span class="bg-white/20 text-xs rounded-full px-2 py-1" id="count-link-youtube-1">...</span>
                 </a>
                 
-                <!-- YouTube Link 2 -->
-                <a href="https://www.youtube.com/ceobihar" id="link-youtube-2" target="_blank" class="social-link group flex items-center justify-between w-full bg-red-600 hover:bg-red-700 text-white font-semibold p-4 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-md">
-                     <div class="flex items-center"><svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M21.582,6.186c-0.23-0.814-0.908-1.491-1.722-1.722C18.256,4,12,4,12,4S5.744,4,4.14,4.464 c-0.814,0.23-1.491,0.908-1.722,1.722C2,7.79,2,12,2,12s0,4.21,0.418,5.814c0.23,0.814,0.908,1.491,1.722,1.722 C5.744,20,12,20,12,20s6.256,0,7.86-0.464c0.814-0.23,1.491-0.908,1.722-1.722C22,16.21,22,12,22,12S22,7.79,21.582,6.186z M10,15.464V8.536L16,12L10,15.464z"/></svg>Subscribe CEO Bihar on YouTube</div>
+                <a href="https://www.youtube.com/channel/UCN253VnsV2k_r3q5pWJgMIg" id="link-youtube-2" target="_blank" class="social-link-yt group flex items-center justify-between w-full text-white font-semibold p-4 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-md">
+                        <div class="flex items-center"><svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M21.582,6.186c-0.23-0.814-0.908-1.491-1.722-1.722C18.256,4,12,4,12,4S5.744,4,4.14,4.464 c-0.814,0.23-1.491,0.908-1.722,1.722C2,7.79,2,12,2,12s0,4.21,0.418,5.814c0.23,0.814,0.908,1.491,1.722,1.722 C5.744,20,12,20,12,20s6.256,0,7.86-0.464c0.814-0.23,1.491-0.908,1.722-1.722C22,16.21,22,12,22,12S22,7.79,21.582,6.186z M10,15.464V8.536L16,12L10,15.464z"/></svg>Subscribe CEO Bihar on YouTube</div>
                     <span class="bg-white/20 text-xs rounded-full px-2 py-1" id="count-link-youtube-2">...</span>
                 </a>
 
             </div>
 
-            <!-- Footer -->
             <div class="text-center mt-8">
                 <p class="text-xs text-gray-500">Made with 🤍</p>
             </div>
         </div>
     </div>
-    
-
-
 </body>
 </html>
