@@ -20,84 +20,75 @@
     .animate-fade-in {
       animation: fadeIn 0.6s ease-out forwards;
     }
-    .social-link-fb, .social-link-yt {
+    .card {
+      backdrop-filter: blur(6px);
       background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%);
-      backdrop-filter: blur(2px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
     }
-    .social-link-fb {
-      background-color: #4f46e5;
-    }
-    .social-link-fb:hover {
-      background-color: #4338ca;
-    }
-    .social-link-yt {
-      background-color: #9f1239;
-    }
-    .social-link-yt:hover {
-      background-color: #881337;
+    .card:hover {
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.15);
+      transform: scale(1.05);
     }
   </style>
 </head>
 <body class="bg-gradient-to-br from-gray-900 via-slate-900 to-slate-800 min-h-screen flex items-center justify-center p-4">
 
-  <div class="w-full max-w-md mx-auto bg-gray-800/60 backdrop-blur-md rounded-3xl shadow-2xl p-8 border border-gray-700 animate-fade-in">
+  <div class="w-full max-w-md mx-auto rounded-3xl shadow-2xl p-8 animate-fade-in">
 
     <div class="flex flex-col items-center text-center">
       <h1 class="text-3xl font-bold text-white mt-2">Social Media Handles</h1>
       <p class="text-sm text-gray-400 mt-1">BLOs Workshop</p>
-      <p class="text-sm text-gray-300 mt-3 max-w-xs">Welcome</p>
+      <p class="text-sm text-gray-300 mt-3 max-w-xs">Welcome! Follow us for updates.</p>
     </div>
 
     <div class="mt-8 space-y-4">
-      <!-- Facebook Link 1 -->
+
       <a href="https://www.facebook.com/ECI/" target="_blank" rel="noopener noreferrer"
-        class="social-link-fb group flex items-center justify-between w-full text-white font-semibold p-4 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-lg">
-        <div class="flex items-center">
-          <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
-          </svg>
-          Follow ECI on Facebook
-        </div>
+        class="card group flex items-center w-full text-white font-semibold p-4 rounded-2xl transition-all duration-300 transform">
+        <svg class="w-6 h-6 mr-3 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+        </svg>
+        <span>Follow ECI on Facebook</span>
       </a>
 
-      <!-- Facebook Link 2 -->
       <a href="https://www.facebook.com/BiharCEO/" target="_blank" rel="noopener noreferrer"
-        class="social-link-fb group flex items-center justify-between w-full text-white font-semibold p-4 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-lg">
-        <div class="flex items-center">Follow CEO Bihar on Facebook</div>
+        class="card group flex items-center w-full text-white font-semibold p-4 rounded-2xl transition-all duration-300 transform">
+        <svg class="w-6 h-6 mr-3 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+        </svg>
+        <span>Follow CEO Bihar on Facebook</span>
       </a>
 
-      <!-- Facebook Link 3 -->
       <a href="https://www.facebook.com/dm.westchamparan/" target="_blank" rel="noopener noreferrer"
-        class="social-link-fb group flex items-center justify-between w-full text-white font-semibold p-4 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-lg">
-        <div class="flex items-center">Follow DEO West Champaran on Facebook</div>
+        class="card group flex items-center w-full text-white font-semibold p-4 rounded-2xl transition-all duration-300 transform">
+        <svg class="w-6 h-6 mr-3 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+        </svg>
+        <span>Follow DEO West Champaran on Facebook</span>
       </a>
 
-      <!-- YouTube Link 1 -->
       <a href="https://www.youtube.com/@ECIVoterEducation" target="_blank" rel="noopener noreferrer"
-        class="social-link-yt group flex items-center justify-between w-full text-white font-semibold p-4 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-lg">
-        <div class="flex items-center">Subscribe ECI on YouTube</div>
+        class="card group flex items-center w-full text-white font-semibold p-4 rounded-2xl transition-all duration-300 transform">
+        <svg class="w-6 h-6 mr-3 text-red-500" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M21.582,6.186c-0.23-0.814-0.908-1.491-1.722-1.722C18.256,4,12,4,12,4S5.744,4,4.14,4.464 c-0.814,0.23-1.491,0.908-1.722,1.722C2,7.79,2,12,2,12s0,4.21,0.418,5.814c0.23,0.814,0.908,1.491,1.722,1.722 C5.744,20,12,20,12,20s6.256,0,7.86-0.464c0.814-0.23,1.491-0.908,1.722-1.722C22,16.21,22,12,22,12S22,7.79,21.582,6.186z M10,15.464V8.536L16,12L10,15.464z"/>
+        </svg>
+        <span>Subscribe ECI on YouTube</span>
       </a>
 
-      <!-- YouTube Link 2 -->
       <a href="https://www.youtube.com/@ceobihar" target="_blank" rel="noopener noreferrer"
-        class="social-link-yt group flex items-center justify-between w-full text-white font-semibold p-4 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-lg">
-        <div class="flex items-center">Subscribe CEO Bihar on YouTube</div>
+        class="card group flex items-center w-full text-white font-semibold p-4 rounded-2xl transition-all duration-300 transform">
+        <svg class="w-6 h-6 mr-3 text-red-500" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M21.582,6.186c-0.23-0.814-0.908-1.491-1.722-1.722C18.256,4,12,4,12,4S5.744,4,4.14,4.464 c-0.814,0.23-1.491,0.908-1.722,1.722C2,7.79,2,12,2,12s0,4.21,0.418,5.814c0.23,0.814,0.908,1.491,1.722,1.722 C5.744,20,12,20,12,20s6.256,0,7.86-0.464c0.814-0.23,1.491-0.908,1.722-1.722C22,16.21,22,12,22,12S22,7.79,21.582,6.186z M10,15.464V8.536L16,12L10,15.464z"/>
+        </svg>
+        <span>Subscribe CEO Bihar on YouTube</span>
       </a>
+
     </div>
 
     <div class="text-center mt-8">
-      <p id="visit-counter" class="text-xs text-gray-400">Loading visit count...</p>
-      <p class="text-xs text-gray-500 mt-1">Made with 🤍</p>
+      <p class="text-xs text-gray-500">Made with 🤍</p>
     </div>
 
   </div>
-
-  <script>
-    // Simple localStorage visit counter
-    let count = localStorage.getItem('visitCount');
-    count = count ? parseInt(count) + 1 : 1;
-    localStorage.setItem('visitCount', count);
-    document.getElementById('visit-counter').innerText = `You have visited this page ${count} ${count === 1 ? 'time' : 'times'} this session.`;
-  </script>
 </body>
 </html>
